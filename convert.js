@@ -129,7 +129,20 @@ function convertChineseNumber(text, callback) {
         }
         else {
             var lastUnit = 0;
+
             while (numList.length > 0) {
+
+                // var allunit = [];
+                // for(var a = 0;a < typeList.length;a++){
+                //     if(typeList[a] == 'unit'){
+                //         allunit.push(numList[a])
+                //     }
+                // }
+                // console.log(numList);
+                // console.log(typeList);
+                // console.log(numList);
+                // console.log(allunit);
+
                 var maxUnit = Math.max(...numList);
                 var maxPos = numList.indexOf(maxUnit);
                 var maxValue = numList.slice(0, maxPos);
@@ -207,8 +220,10 @@ Array.prototype.allValuesSame = function () {
     return true;
 }
 
+exports.convertChineseNumber = convertChineseNumber;
+
 //1238萬 一二三 二三雞 三點七萬 一萬零二 一萬二 十萬五千 五十九億兩千萬一千兩百四十五 一萬兩千 一億萬 一萬億 三十二蚊 十三雞 廿三雞 一兆 乙 九千九百九十九毫九 39.8萬 3萬9千七百 20至44歲港女患癌 多男士1.3倍 一點三 2.7萬
-convertChineseNumber('1238萬 一二三 二三雞 三點七萬 一萬零二 一萬二 十萬五千 五十九億兩千萬一千兩百四十五 一萬兩千 一億萬 一萬億 三十二蚊 十三雞 廿三雞 一兆 乙 九千九百九十九毫九 39.8萬 3萬9千七百 20至44歲港女患癌 多男士1.3倍 一點三 2.7萬 ',
-    function (result) {
-        console.log(result);
-    });
+// convertChineseNumber('1238萬 一二三 二三雞 三點七萬 一萬零二 一萬二 十萬五千 五十九億兩千萬一千兩百四十五 一萬兩千 一億萬 一萬億 三十二蚊 十三雞 廿三雞 一兆 乙 九千九百九十九毫九 39.8萬 3萬9千七百 20至44歲港女患癌 多男士1.3倍 一點三 2.7萬 ',
+//     function (result) {
+//         console.log(result);
+//     });

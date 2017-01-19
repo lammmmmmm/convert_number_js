@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/lammmmmmm/convert_number_js/issues"
   },
-  "homepage": "https://github.com/lammmmmmm/convert_number_js#readme"
+  "homepage": "https://github.com/lammmmmmm/convert_number_js#readme",
+  "dependencies": {
+    "nzh": "0.0.4"
+  }
 }
