@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Convert numbers in Chinese characters to arabic numbers",
   "main": "convert.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lammmmmmm/convert_number_js.git"
